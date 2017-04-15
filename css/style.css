@@ -1,0 +1,66 @@
+body{margin:0px; padding:0px 0px 0px 0px; color:#000; line-height:normal; font-family: 'Open Sans'; font-weight:400; background:#fff; overflow-x:hidden;}
+.gbtn{background: rgb(0,255,169); background: -moz-linear-gradient(left, rgba(0,255,169,1) 0%, rgba(0,246,255,1) 100%); background: -webkit-linear-gradient(left, rgba(0,255,169,1) 0%,rgba(0,246,255,1) 100%); background: linear-gradient(to right, rgba(0,255,169,1) 0%,rgba(0,246,255,1) 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffa9', endColorstr='#00f6ff',GradientType=1 ); color:#000; border-radius:4px; -webkit-border-radius:4px; -ms-border-radius:4px; cursor:pointer;}
+.started{border-radius:100px; -webkit-border-radius:100px; -ms-border-radius:100px; background: #fff; padding: 20px 60px;; font-weight: 800; font-size: 24px; line-height: 33px; box-shadow:0px 0px 7px rgba(0,0,0,0.4); -wekit-box-shadow:0px 0px 7px rgba(0,0,0,0.4); -ms-box-shadow:0px 0px 7px rgba(0,0,0,0.4); display: inline-block;}
+.wrapper{padding-bottom:65px; min-height:100vh; position:relative;}
+.header .logo{position:relative; z-index:99;}
+.header.searchr{position:static; background:#f7f7f7;}
+.header{ padding:25px 30px; position:absolute; top: 0px; left: 0px; right: 0px; z-index: 1; font-size: 0.833em;}
+.headerright{  width:calc(100% - 300px);float:right; font-weight:600; text-align:right; line-height:19px; color: #FFFFFF;}
+.header .logo{background:url(../images/logo.png) no-repeat left top; vertical-align:top; width:200px; height:38px; display:inline-block;}
+.header.searchr .logo{background:url("../images/logo-gray.png") no-repeat left top; vertical-align:top; width:200px; height:38px; display:inline-block;}
+.headerright a{color: #FFFFFF; padding:9px 9px; display:inline-block;}
+.header.searchr .headerright a{color:#000000;}
+.headerright a.gbtn{  border-radius:100px; -webkit-border-radius:100px; -ms-border-radius:100px; color:#000; padding:9px 30px; margin-right:9px;}
+
+.footer{ clear:both; font-size: 12px; padding:22px 35px 21px; position:absolute; left:0px; width:100%; bottom:0px; }
+.footer .copyright{ width: 25%; float: left; color: #7A7A7A; font-size: 12px; line-height: 22px;}
+.footer .footerlinks{ width: 50%; float: left; font-size: 16px; line-height: 22px;color: #999999; text-align: center; text-transform: uppercase;}
+.footer .footerlinks a{color: #999999;}
+.footer .teamofservices{ width: 25%; float: left; text-align: right; font-size: 12px; line-height: 22px;}
+.footer .teamofservices a{color: #7A7A7A;}
+
+
+.welcome{ background:url(../images/welcomebg.jpg) no-repeat center center; background-size:cover; position:relative; height:100vh;}
+.welcomecontent{position: absolute; bottom: 40px; left: 0px; right: 0px; width: 740px; margin: 0px auto;}
+.homeserach{height:64px; line-height:64px; margin-bottom:17px; position: relative;}
+.homeserach .textfield{ display:inline-block; width:40%; font-size: 24px; font-weight:300; color: #000000; border-radius:4px; -webkit-border-radius:4px; -ms-border-radius:4px; border:1px solid #00e298; padding:0px 10px 0px 60px;}
+.homeserach .gbtn{ display:inline-block; margin-left:10px; font-size: 22px; font-weight: bold; color: #242424; width:25%; box-shadow:0px 0px 7px rgba(0,0,0,0.4);}
+
+.homeserach .autosearch{ width:70%; position: absolute; top: 64px; left: 0px; max-height: 300px; overflow:visible; z-index: 99; right: 0px; border: 1px solid #00e298; background:rgba(0,0,0,0.9); color: #fff;}
+.autosearch.autosearchshow{overflow-Y:scroll;}
+.homeserach .autosearch h6{ padding: 10px 10px; padding-left: 60px; background: rgb(0,255,169); background: -moz-linear-gradient(left, rgba(0,255,169,1) 0%, rgba(0,246,255,1) 100%); background: -webkit-linear-gradient(left, rgba(0,255,169,1) 0%,rgba(0,246,255,1) 100%); background: linear-gradient(to right, rgba(0,255,169,1) 0%,rgba(0,246,255,1) 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffa9', endColorstr='#00f6ff',GradientType=1 ); color:#000; }
+.homeserach .autosearch li{ padding: 10px 10px; padding-left: 60px; line-height: normal; font-size: 14px; border-bottom: 1px solid #00e298;}
+.homeserach .autosearch li:last-child{ border-bottom: 0px;}
+.homeserach .autosearch li:hover{ background: rgba(0,0,0,0.7); cursor: pointer;}
+
+
+.homefind{font-size: 20px; font-weight: 300; text-align: center; line-height: 27px; color: #FFFFFF;}
+.homefind h4{font-size: 34px; font-weight: 300; text-align: center; line-height: 46px; color: #FFFFFF; margin-bottom:20px;}
+.homefind p{ position:relative; display:inline-block;}
+.homefind p:before, .homefind p:after{ width:60px; height:1px; background:#fff; content:""; display:inline-block; position:absolute; left:60px; bottom:10px;}
+.homefind p:after{ right:60px; left:inherit;}
+.homefind .arrowdown{ margin-top:20px;}
+
+.homerow2{ width:100%; position:relative; height:100vh; background: rgb(159,0,100); background: -moz-linear-gradient(left, rgba(159,0,100,1) 0%, rgba(56,0,140,1) 100%); background: -webkit-linear-gradient(left, rgba(159,0,100,1) 0%,rgba(56,0,140,1) 100%); background: linear-gradient(to right, rgba(159,0,100,1) 0%,rgba(56,0,140,1) 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9f0064', endColorstr='#38008c',GradientType=1 );}
+.homerow2 img{ width:100%;}
+.homerow2left{width:32%; padding-left:7%; padding-top:100px; font-size:20px; line-height: 22px; color: #FFFFFF;}
+.homerow2left .widgetblock{ margin-bottom:40px;}
+.homerow2left .widgetblock h3{font-weight: 800; color:#fff; font-size:48px; line-height:58px; margin-bottom: 10px;}
+.homerow2 a.started{color: #8c0066; }
+
+.homerow2right{ width:68%; position:absolute; right:0px; bottom:0px; top:80px;}
+
+.homerow3{width:100%; position:relative; padding: 230px 0px 80px 0px; text-align: center;}
+.homerow3block{max-width: 820px; display: inline-block; font-size: 20px; text-align: center; line-height: 27px; color: #464646;}
+.homerow3block h4{font-weight: 300; text-align: center; line-height: 46px; color: #1b1b1b; margin-bottom: 15px;}
+ul {list-style-type:none;}
+ul li {width:33.33%; height:350px;float:left;}
+.musicname{width: 33.33% !important;}
+@media screen and (max-width:520px) {
+    ul li#three {clear:left;}
+}
+.modal{
+    display : block !important;
+    width: auto;
+    height: auto;
+}

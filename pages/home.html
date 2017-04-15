@@ -1,0 +1,56 @@
+<div class="welcome">
+    <div class="welcomecontent">
+        <div class="homefind">
+            <div class="arrowdown">
+                <a href="#"><img src="images/arrowdown-36.png" alt="" title=""></a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="">
+    <div class="homeserach">
+        <input type="text" class="textfield" ng-model="searchtxt" placeholder="Search from millions of popular songs">
+        <input type="button" value="Search" ng-click="searchtrack('');" class="gbtn">
+        <div ng-if="trackdata.length>0">
+            <ul>
+                <li ng-repeat="music in trackdata track by $index">
+                    <div class="image" ng-click="viewAlbum(music)" ng-if="music.album_type=='album'">
+                        <img ng-src="{{music.images[1]['url']}}">
+                        <div class="musicname">{{music.name}}</div>
+                    </div>
+                    <div class="image" ng-if="music.album_type!='album'">
+                        <img ng-src="{{music.images[1]['url']}}">
+                        <div class="musicname">{{music.name}}</div>
+                    </div>
+                </li>
+            </ul>
+            <input type="button" value="Show me more" ng-click="searchtrack(showmore);" class="gbtn">
+        </div>
+    </div>
+</div>
+
+<script type="text/ng-template" id="myModalContent.html">
+
+<div class="modal-content" >
+
+        <div class="modal-header">
+            <img width="100%" height="200px" ng-src="{{music.images[0]['url']}}">
+        </div>
+        <div class="modal-body">
+            <label>Album</label>
+            <table>
+                <tbody>
+                    <tr  ng-repeat="song in musictrack track by $index">
+                        <td>
+                            <img ng-src="">
+                        </td>
+                        <td>{{song.name}}</td>
+                        <td>
+                            {{releaseyear}}
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        </div>
+    </script>
